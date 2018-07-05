@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD1B274A20EE913000E5760D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1B274920EE913000E5760D /* AppDelegate.swift */; };
+		AD1B274C20EE913000E5760D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1B274B20EE913000E5760D /* ViewController.swift */; };
+		AD1B274F20EE913000E5760D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD1B274D20EE913000E5760D /* Main.storyboard */; };
+		AD1B275120EE913000E5760D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD1B275020EE913000E5760D /* Assets.xcassets */; };
+		AD1B275420EE913000E5760D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD1B275220EE913000E5760D /* LaunchScreen.storyboard */; };
+		AD1B275F20EE913000E5760D /* GimmeFoodNowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1B275E20EE913000E5760D /* GimmeFoodNowTests.swift */; };
+		AD1B276A20EE913000E5760D /* GimmeFoodNowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1B276920EE913000E5760D /* GimmeFoodNowUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AD1B275B20EE913000E5760D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD1B273E20EE913000E5760D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD1B274520EE913000E5760D;
+			remoteInfo = GimmeFoodNow;
+		};
+		AD1B276620EE913000E5760D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD1B273E20EE913000E5760D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD1B274520EE913000E5760D;
+			remoteInfo = GimmeFoodNow;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AD1B274620EE913000E5760D /* GimmeFoodNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GimmeFoodNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD1B274920EE913000E5760D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AD1B274B20EE913000E5760D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AD1B274E20EE913000E5760D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AD1B275020EE913000E5760D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AD1B275320EE913000E5760D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AD1B275520EE913000E5760D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD1B275A20EE913000E5760D /* GimmeFoodNowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GimmeFoodNowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD1B275E20EE913000E5760D /* GimmeFoodNowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GimmeFoodNowTests.swift; sourceTree = "<group>"; };
+		AD1B276020EE913000E5760D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD1B276520EE913000E5760D /* GimmeFoodNowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GimmeFoodNowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD1B276920EE913000E5760D /* GimmeFoodNowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GimmeFoodNowUITests.swift; sourceTree = "<group>"; };
+		AD1B276B20EE913000E5760D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD1B274320EE913000E5760D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD1B275720EE913000E5760D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD1B276220EE913000E5760D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD1B273D20EE913000E5760D = {
+			isa = PBXGroup;
+			children = (
+				AD1B274820EE913000E5760D /* GimmeFoodNow */,
+				AD1B275D20EE913000E5760D /* GimmeFoodNowTests */,
+				AD1B276820EE913000E5760D /* GimmeFoodNowUITests */,
+				AD1B274720EE913000E5760D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AD1B274720EE913000E5760D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD1B274620EE913000E5760D /* GimmeFoodNow.app */,
+				AD1B275A20EE913000E5760D /* GimmeFoodNowTests.xctest */,
+				AD1B276520EE913000E5760D /* GimmeFoodNowUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD1B274820EE913000E5760D /* GimmeFoodNow */ = {
+			isa = PBXGroup;
+			children = (
+				AD1B274920EE913000E5760D /* AppDelegate.swift */,
+				AD1B274B20EE913000E5760D /* ViewController.swift */,
+				AD1B274D20EE913000E5760D /* Main.storyboard */,
+				AD1B275020EE913000E5760D /* Assets.xcassets */,
+				AD1B275220EE913000E5760D /* LaunchScreen.storyboard */,
+				AD1B275520EE913000E5760D /* Info.plist */,
+			);
+			path = GimmeFoodNow;
+			sourceTree = "<group>";
+		};
+		AD1B275D20EE913000E5760D /* GimmeFoodNowTests */ = {
+			isa = PBXGroup;
+			children = (
+				AD1B275E20EE913000E5760D /* GimmeFoodNowTests.swift */,
+				AD1B276020EE913000E5760D /* Info.plist */,
+			);
+			path = GimmeFoodNowTests;
+			sourceTree = "<group>";
+		};
+		AD1B276820EE913000E5760D /* GimmeFoodNowUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AD1B276920EE913000E5760D /* GimmeFoodNowUITests.swift */,
+				AD1B276B20EE913000E5760D /* Info.plist */,
+			);
+			path = GimmeFoodNowUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD1B274520EE913000E5760D /* GimmeFoodNow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD1B276E20EE913100E5760D /* Build configuration list for PBXNativeTarget "GimmeFoodNow" */;
+			buildPhases = (
+				AD1B274220EE913000E5760D /* Sources */,
+				AD1B274320EE913000E5760D /* Frameworks */,
+				AD1B274420EE913000E5760D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GimmeFoodNow;
+			productName = GimmeFoodNow;
+			productReference = AD1B274620EE913000E5760D /* GimmeFoodNow.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AD1B275920EE913000E5760D /* GimmeFoodNowTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD1B277120EE913100E5760D /* Build configuration list for PBXNativeTarget "GimmeFoodNowTests" */;
+			buildPhases = (
+				AD1B275620EE913000E5760D /* Sources */,
+				AD1B275720EE913000E5760D /* Frameworks */,
+				AD1B275820EE913000E5760D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD1B275C20EE913000E5760D /* PBXTargetDependency */,
+			);
+			name = GimmeFoodNowTests;
+			productName = GimmeFoodNowTests;
+			productReference = AD1B275A20EE913000E5760D /* GimmeFoodNowTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AD1B276420EE913000E5760D /* GimmeFoodNowUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD1B277420EE913100E5760D /* Build configuration list for PBXNativeTarget "GimmeFoodNowUITests" */;
+			buildPhases = (
+				AD1B276120EE913000E5760D /* Sources */,
+				AD1B276220EE913000E5760D /* Frameworks */,
+				AD1B276320EE913000E5760D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD1B276720EE913000E5760D /* PBXTargetDependency */,
+			);
+			name = GimmeFoodNowUITests;
+			productName = GimmeFoodNowUITests;
+			productReference = AD1B276520EE913000E5760D /* GimmeFoodNowUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD1B273E20EE913000E5760D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Eric Seo";
+				TargetAttributes = {
+					AD1B274520EE913000E5760D = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					AD1B275920EE913000E5760D = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AD1B274520EE913000E5760D;
+					};
+					AD1B276420EE913000E5760D = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AD1B274520EE913000E5760D;
+					};
+				};
+			};
+			buildConfigurationList = AD1B274120EE913000E5760D /* Build configuration list for PBXProject "GimmeFoodNow" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD1B273D20EE913000E5760D;
+			productRefGroup = AD1B274720EE913000E5760D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD1B274520EE913000E5760D /* GimmeFoodNow */,
+				AD1B275920EE913000E5760D /* GimmeFoodNowTests */,
+				AD1B276420EE913000E5760D /* GimmeFoodNowUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD1B274420EE913000E5760D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD1B275420EE913000E5760D /* LaunchScreen.storyboard in Resources */,
+				AD1B275120EE913000E5760D /* Assets.xcassets in Resources */,
+				AD1B274F20EE913000E5760D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD1B275820EE913000E5760D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD1B276320EE913000E5760D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD1B274220EE913000E5760D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD1B274C20EE913000E5760D /* ViewController.swift in Sources */,
+				AD1B274A20EE913000E5760D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD1B275620EE913000E5760D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD1B275F20EE913000E5760D /* GimmeFoodNowTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD1B276120EE913000E5760D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD1B276A20EE913000E5760D /* GimmeFoodNowUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AD1B275C20EE913000E5760D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD1B274520EE913000E5760D /* GimmeFoodNow */;
+			targetProxy = AD1B275B20EE913000E5760D /* PBXContainerItemProxy */;
+		};
+		AD1B276720EE913000E5760D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD1B274520EE913000E5760D /* GimmeFoodNow */;
+			targetProxy = AD1B276620EE913000E5760D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AD1B274D20EE913000E5760D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD1B274E20EE913000E5760D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AD1B275220EE913000E5760D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD1B275320EE913000E5760D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AD1B276C20EE913000E5760D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AD1B276D20EE913100E5760D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD1B276F20EE913100E5760D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GimmeFoodNow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = EricSeo.GimmeFoodNow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		AD1B277020EE913100E5760D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GimmeFoodNow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = EricSeo.GimmeFoodNow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		AD1B277220EE913100E5760D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GimmeFoodNowTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = EricSeo.GimmeFoodNowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GimmeFoodNow.app/GimmeFoodNow";
+			};
+			name = Debug;
+		};
+		AD1B277320EE913100E5760D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GimmeFoodNowTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = EricSeo.GimmeFoodNowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GimmeFoodNow.app/GimmeFoodNow";
+			};
+			name = Release;
+		};
+		AD1B277520EE913100E5760D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = GimmeFoodNowUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = EricSeo.GimmeFoodNowUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = GimmeFoodNow;
+			};
+			name = Debug;
+		};
+		AD1B277620EE913100E5760D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = GimmeFoodNowUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = EricSeo.GimmeFoodNowUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = GimmeFoodNow;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD1B274120EE913000E5760D /* Build configuration list for PBXProject "GimmeFoodNow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD1B276C20EE913000E5760D /* Debug */,
+				AD1B276D20EE913100E5760D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD1B276E20EE913100E5760D /* Build configuration list for PBXNativeTarget "GimmeFoodNow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD1B276F20EE913100E5760D /* Debug */,
+				AD1B277020EE913100E5760D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AD1B277120EE913100E5760D /* Build configuration list for PBXNativeTarget "GimmeFoodNowTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD1B277220EE913100E5760D /* Debug */,
+				AD1B277320EE913100E5760D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AD1B277420EE913100E5760D /* Build configuration list for PBXNativeTarget "GimmeFoodNowUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD1B277520EE913100E5760D /* Debug */,
+				AD1B277620EE913100E5760D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AD1B273E20EE913000E5760D /* Project object */;
+}
