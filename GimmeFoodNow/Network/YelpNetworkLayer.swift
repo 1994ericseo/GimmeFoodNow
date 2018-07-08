@@ -8,11 +8,30 @@
 
 import Foundation
 
+struct YelpAPIStuff {
+    static let host = "api.yelp.com"
+    static let errorDomain = "com.yelp.YelpAPI.ErrorDomain"
+}
+
 class YelpNetworkLayer {
     private let clientID = "RYoycHeSURF7B60tuQou_w"
-    private let APIKey = "U0yP6dXM7e2FrRXTf6HbVuvDO9Jj2LdsHWdlZgYymlgZIep1ua7wryiFPfqCzH6JrMOfB0lIhdPTbO0pY-d7JqOaJ7NiYhMUaUwRl7rc9Ieu-asgoVWoH9mOHo5BW3Yx"
-    private let searchRequestURL = "https://api.yelp.com/v3/businesses/search"
+    private let apiKey = "U0yP6dXM7e2FrRXTf6HbVuvDO9Jj2LdsHWdlZgYymlgZIep1ua7wryiFPfqCzH6JrMOfB0lIhdPTbO0pY-d7JqOaJ7NiYhMUaUwRl7rc9Ieu-asgoVWoH9mOHo5BW3Yx"
     
+    func createRequest(path: String, params: Dictionary<String, String?>) -> URLRequest? {
+        var components = URLComponents()
+        components.scheme = "https"
+        components.host = YelpAPIStuff.host
+        components.path = path
+        components.queryItems = self.queryItems(params: params)
+        guard let url = components.url else {
+            return nil
+        }
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET"
+        let authHeader = String(format: "Bearer %@", apiKey)
+        request.setValue(authHeader, forHTTPHeaderField: "Authorization")
+        return request
+    }
     
     func queryItems(params: Dictionary<String, String?>) -> [URLQueryItem] {
         var queryItems: [URLQueryItem] = []
