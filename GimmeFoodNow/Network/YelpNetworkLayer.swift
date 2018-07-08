@@ -33,6 +33,28 @@ class YelpNetworkLayer {
         return request
     }
     
+    func query(request: URLRequest?, completion: @escaping (Any, Error?) -> Void) {
+        let session = URLSession(configuration: .default)
+        guard let urlRequest = request else {
+            return
+        }
+        let dataTask = session.dataTask(with: urlRequest) { (data, response, error) in
+            if let data = data {
+                do {
+                    guard let jsonData = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] else {
+                        return
+                    }
+                    completion(jsonData, nil)
+                } catch let error {
+                    print(error.localizedDescription)
+                }
+            } else if let error = error {
+                print(error.localizedDescription)
+            }
+        }
+        dataTask.resume()
+    }
+    
     func queryItems(params: Dictionary<String, String?>) -> [URLQueryItem] {
         var queryItems: [URLQueryItem] = []
         for (name, value) in params {
