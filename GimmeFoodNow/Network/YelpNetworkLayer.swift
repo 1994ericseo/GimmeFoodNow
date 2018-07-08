@@ -17,7 +17,7 @@ class YelpNetworkLayer {
     private let clientID = "RYoycHeSURF7B60tuQou_w"
     private let apiKey = "U0yP6dXM7e2FrRXTf6HbVuvDO9Jj2LdsHWdlZgYymlgZIep1ua7wryiFPfqCzH6JrMOfB0lIhdPTbO0pY-d7JqOaJ7NiYhMUaUwRl7rc9Ieu-asgoVWoH9mOHo5BW3Yx"
     
-    func createRequest(path: String, params: Dictionary<String, String?>) -> URLRequest? {
+    public func createRequest(path: String, params: Dictionary<String, String?>) -> URLRequest? {
         var components = URLComponents()
         components.scheme = "https"
         components.host = YelpAPIStuff.host
@@ -33,7 +33,7 @@ class YelpNetworkLayer {
         return request
     }
     
-    func query(request: URLRequest?, completion: @escaping (Any, Error?) -> Void) {
+    public func query(request: URLRequest?, completion: @escaping (Any, Error?) -> Void) {
         let session = URLSession(configuration: .default)
         guard let urlRequest = request else {
             return
