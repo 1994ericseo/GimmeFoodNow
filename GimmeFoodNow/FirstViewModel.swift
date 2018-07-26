@@ -6,14 +6,42 @@
 //  Copyright © 2018 Eric Seo. All rights reserved.
 //
 
-class FirstViewModel {
-    let buttonTitle = "Find me food"
-    
+import Foundation
+import CoreLocation
+
+class FirstViewModel: NSObject, CLLocationManagerDelegate {
     weak var delegate: FirstViewControllerDelegate?
     
+    let locationManager = CLLocationManager()
+    let buttonTitle = "Find me food"
+    
+    
+    override init() {
+        super.init()
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.delegate = self;
+            locationManager.desiredAccuracy = kCLLocationAccuracyBest
+            locationManager.requestAlwaysAuthorization()
+            locationManager.startUpdatingLocation()
+        }
+    }
+    
+    func currentLatLongCoordinate() -> CLLocationCoordinate2D? {
+        guard let location = locationManager.location else {
+            return nil
+        }
+        return location.coordinate
+    }
+    
     func findMeFoodAction() {
+        guard let currentLatLongCoordinate = currentLatLongCoordinate() else {
+            self.delegate?.showErrorState()
+            return
+        }
         delegate?.updateLoadingState(isLoading: true)
-        YelpSearchRequests().searchWithLatLong(lat: 37.291459, long: -121.973994) { [weak self] (data, error) in
+        let lat = Double(currentLatLongCoordinate.latitude)
+        let long = Double(currentLatLongCoordinate.longitude)
+        YelpSearchRequests().searchWithLatLong(lat: lat, long: long) { [weak self] (data, error) in
             self?.delegate?.updateLoadingState(isLoading: false)
         }
     }

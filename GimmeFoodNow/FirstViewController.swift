@@ -10,6 +10,7 @@ import UIKit
 
 protocol FirstViewControllerDelegate: class {
     func updateLoadingState(isLoading: Bool)
+    func showErrorState()
 }
 
 class FirstViewController: UIViewController {
@@ -106,6 +107,12 @@ extension FirstViewController: FirstViewControllerDelegate {
         } else {
             removeSpinner()
         }
+    }
+    
+    func showErrorState() {
+        let alert = UIAlertController(title: "Invalid current location", message: "Allow location services by going to settings", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        self.present(alert, animated: true)
     }
 }
 
