@@ -8,15 +8,19 @@
 
 import UIKit
 
+protocol FirstViewControllerDelegate: class {
+    func updateLoadingState(isLoading: Bool)
+}
+
 class FirstViewController: UIViewController {
     
-    var viewModel: FirstViewModel? {
+    private var viewModel: FirstViewModel? {
         didSet {
             setupView()
         }
     }
     
-    lazy var findMeFoodButton: UIButton = { [unowned self] in
+    private lazy var findMeFoodButton: UIButton = {
         if let viewModel = self.viewModel {
             let button = UIButton(type: .roundedRect)
             button.contentEdgeInsets = UIEdgeInsetsMake(0, 16, 0, 16)
@@ -33,9 +37,21 @@ class FirstViewController: UIViewController {
         return UIButton()
     }()
     
+    private lazy var spinnerView: UIView = {
+        let spinnerView = UIView(frame: self.view.bounds)
+        spinnerView.backgroundColor = UIColor(displayP3Red: 0.5, green: 0.5, blue: 0.5, alpha: 0.5)
+        let loadingIndicator = UIActivityIndicatorView(activityIndicatorStyle: .whiteLarge)
+        loadingIndicator.center = self.view.center
+        loadingIndicator.startAnimating()
+        loadingIndicator.center = spinnerView.center
+        spinnerView.addSubview(loadingIndicator)
+        return spinnerView
+    }()
+    
     init(viewModel: FirstViewModel?) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
+        viewModel?.delegate = self
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -65,6 +81,31 @@ class FirstViewController: UIViewController {
     func findMeFoodButtonAction() {
         if let viewModel = self.viewModel {
             viewModel.findMeFoodAction()
+        }
+    }
+    
+    func displaySpinner() {
+        DispatchQueue.main.async { [weak self] in
+            guard let viewController = self else {
+                return
+            }
+            viewController.view.addSubview(viewController.spinnerView)
+        }
+    }
+    
+    func removeSpinner() {
+        DispatchQueue.main.async { [weak self] in
+            self?.spinnerView.removeFromSuperview()
+        }
+    }
+}
+
+extension FirstViewController: FirstViewControllerDelegate {
+    func updateLoadingState(isLoading: Bool) {
+        if isLoading {
+            displaySpinner()
+        } else {
+            removeSpinner()
         }
     }
 }
