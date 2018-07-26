@@ -38,7 +38,6 @@ class FirstViewModel: NSObject, CLLocationManagerDelegate {
             self.delegate?.showErrorState()
             return
         }
-        
         delegate?.updateLoadingState(isLoading: true)
         let lat = Double(currentLatLongCoordinate.latitude)
         let long = Double(currentLatLongCoordinate.longitude)
