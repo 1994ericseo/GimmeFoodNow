@@ -10,6 +10,7 @@ import UIKit
 
 protocol FirstViewControllerDelegate: class {
     func updateLoadingState(isLoading: Bool)
+    func showErrorState()
 }
 
 class FirstViewController: UIViewController {
@@ -106,6 +107,10 @@ extension FirstViewController: FirstViewControllerDelegate {
         } else {
             removeSpinner()
         }
+    }
+    
+    func showErrorState() {
+        
     }
 }
 
