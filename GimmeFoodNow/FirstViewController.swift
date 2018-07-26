@@ -27,6 +27,7 @@ class FirstViewController: UIViewController {
             button.layer.borderWidth = 1
             button.layer.borderColor = UIColor.blue.cgColor
             button.sizeToFit()
+            button.addTarget(self, action: #selector(findMeFoodButtonAction), for: .touchUpInside)
             return button
         }
         return UIButton()
@@ -60,7 +61,11 @@ class FirstViewController: UIViewController {
             findMeFoodButton.centerYAnchor.constraint(equalTo: view.centerYAnchor)
         ])
     }
-
-
+    
+    func findMeFoodButtonAction() {
+        if let viewModel = self.viewModel {
+            viewModel.findMeFoodAction()
+        }
+    }
 }
 

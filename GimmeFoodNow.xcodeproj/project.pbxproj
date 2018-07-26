@@ -16,6 +16,7 @@
 		AD1B277820EE95C800E5760D /* FirstViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1B277720EE95C800E5760D /* FirstViewModel.swift */; };
 		AD69826820F184DE00660677 /* MainNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD69826720F184DE00660677 /* MainNavigationViewController.swift */; };
 		AD69826E20F1C79700660677 /* YelpNetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD69826D20F1C79700660677 /* YelpNetworkLayer.swift */; };
+		ADA34B8120F1DFED000FF5D2 /* YelpSearchRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA34B8020F1DFED000FF5D2 /* YelpSearchRequests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		AD1B277720EE95C800E5760D /* FirstViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewModel.swift; sourceTree = "<group>"; };
 		AD69826720F184DE00660677 /* MainNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationViewController.swift; sourceTree = "<group>"; };
 		AD69826D20F1C79700660677 /* YelpNetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpNetworkLayer.swift; sourceTree = "<group>"; };
+		ADA34B8020F1DFED000FF5D2 /* YelpSearchRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpSearchRequests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				AD69826D20F1C79700660677 /* YelpNetworkLayer.swift */,
+				ADA34B8020F1DFED000FF5D2 /* YelpSearchRequests.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				AD69826E20F1C79700660677 /* YelpNetworkLayer.swift in Sources */,
 				AD1B274C20EE913000E5760D /* FirstViewController.swift in Sources */,
 				AD69826820F184DE00660677 /* MainNavigationViewController.swift in Sources */,
+				ADA34B8120F1DFED000FF5D2 /* YelpSearchRequests.swift in Sources */,
 				AD1B274A20EE913000E5760D /* AppDelegate.swift in Sources */,
 				AD1B277820EE95C800E5760D /* FirstViewModel.swift in Sources */,
 			);
