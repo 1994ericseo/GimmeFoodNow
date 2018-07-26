@@ -86,10 +86,9 @@ class FirstViewController: UIViewController {
     
     func displaySpinner() {
         DispatchQueue.main.async { [weak self] in
-            guard let viewController = self else {
-                return
+            if let viewController = self {
+                viewController.view.addSubview(viewController.spinnerView)
             }
-            viewController.view.addSubview(viewController.spinnerView)
         }
     }
     
