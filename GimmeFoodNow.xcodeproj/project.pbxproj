@@ -23,7 +23,9 @@
 		ADA34B8120F1DFED000FF5D2 /* YelpSearchRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA34B8020F1DFED000FF5D2 /* YelpSearchRequests.swift */; };
 		ADAEEC25210C44DB00973B62 /* JSONSerializationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAEEC24210C44DB00973B62 /* JSONSerializationHelper.swift */; };
 		ADAEEC27210C45F900973B62 /* JSONSerializationHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAEEC26210C45F900973B62 /* JSONSerializationHelperTests.swift */; };
-		ADAEEC29210C463F00973B62 /* JSONSerializationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAEEC24210C44DB00973B62 /* JSONSerializationHelper.swift */; };
+		ADAEEC2B210C471200973B62 /* Array.json in Resources */ = {isa = PBXBuildFile; fileRef = ADAEEC2A210C471200973B62 /* Array.json */; };
+		ADAEEC2C210C4C3A00973B62 /* JSONSerializationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAEEC24210C44DB00973B62 /* JSONSerializationHelper.swift */; };
+		ADAEEC2D210C4F6100973B62 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4CAF81210A4F79006550D4 /* Restaurant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,7 @@
 		ADA34B8020F1DFED000FF5D2 /* YelpSearchRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpSearchRequests.swift; sourceTree = "<group>"; };
 		ADAEEC24210C44DB00973B62 /* JSONSerializationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONSerializationHelper.swift; sourceTree = "<group>"; };
 		ADAEEC26210C45F900973B62 /* JSONSerializationHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONSerializationHelperTests.swift; sourceTree = "<group>"; };
+		ADAEEC2A210C471200973B62 /* Array.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Array.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				AD4CAF83210A51F9006550D4 /* ExampleYelpResponse.json */,
+				ADAEEC2A210C471200973B62 /* Array.json */,
 				ADAEEC24210C44DB00973B62 /* JSONSerializationHelper.swift */,
 				ADAEEC26210C45F900973B62 /* JSONSerializationHelperTests.swift */,
 			);
@@ -286,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD1B275420EE913000E5760D /* LaunchScreen.storyboard in Resources */,
+				ADAEEC2B210C471200973B62 /* Array.json in Resources */,
 				AD4CAF84210A51F9006550D4 /* ExampleYelpResponse.json in Resources */,
 				AD1B275120EE913000E5760D /* Assets.xcassets in Resources */,
 			);
@@ -327,7 +332,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADAEEC29210C463F00973B62 /* JSONSerializationHelper.swift in Sources */,
+				ADAEEC2D210C4F6100973B62 /* Restaurant.swift in Sources */,
+				ADAEEC2C210C4C3A00973B62 /* JSONSerializationHelper.swift in Sources */,
 				AD1B275F20EE913000E5760D /* GimmeFoodNowTests.swift in Sources */,
 				AD4CAF86210A531B006550D4 /* RestaurantTests.swift in Sources */,
 				ADAEEC27210C45F900973B62 /* JSONSerializationHelperTests.swift in Sources */,

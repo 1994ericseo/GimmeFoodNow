@@ -7,7 +7,6 @@ struct Restaurant {
     let phone: String?
     let name: String?
     let url: String?
-    
 }
 
 extension Restaurant {
