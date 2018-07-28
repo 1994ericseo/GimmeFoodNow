@@ -11,6 +11,7 @@ import UIKit
 protocol FirstViewControllerDelegate: class {
     func updateLoadingState(isLoading: Bool)
     func showErrorState()
+    func showRestaurantViewController(viewModel: RestaurantViewModel)
 }
 
 class FirstViewController: UIViewController {
@@ -113,6 +114,13 @@ extension FirstViewController: FirstViewControllerDelegate {
         let alert = UIAlertController(title: "Invalid current location", message: "Allow location services by going to settings", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
         self.present(alert, animated: true)
+    }
+    
+    func showRestaurantViewController(viewModel: RestaurantViewModel) {
+        let viewController = RestaurantViewController(viewModel: viewModel)
+        DispatchQueue.main.async { [weak self] in
+            self?.navigationController?.pushViewController(viewController, animated: true)
+        }
     }
 }
 

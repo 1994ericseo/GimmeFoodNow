@@ -30,6 +30,7 @@
 		ADAEEC32210C53D500973B62 /* RestaurantViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAEEC31210C53D500973B62 /* RestaurantViewModel.swift */; };
 		ADAEEC34210C54DC00973B62 /* RestaurantViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAEEC33210C54DC00973B62 /* RestaurantViewModelTests.swift */; };
 		ADAEEC35210C554800973B62 /* RestaurantViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAEEC31210C53D500973B62 /* RestaurantViewModel.swift */; };
+		ADAEEC37210C589000973B62 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAEEC36210C589000973B62 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		ADAEEC2F210C539000973B62 /* RestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
 		ADAEEC31210C53D500973B62 /* RestaurantViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewModel.swift; sourceTree = "<group>"; };
 		ADAEEC33210C54DC00973B62 /* RestaurantViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewModelTests.swift; sourceTree = "<group>"; };
+		ADAEEC36210C589000973B62 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 				ADAEEC28210C460100973B62 /* JSON */,
 				ADAEEC2E210C516200973B62 /* Model */,
 				AD69826C20F1C77F00660677 /* Network */,
+				ADAEEC36210C589000973B62 /* Extensions.swift */,
 			);
 			path = GimmeFoodNow;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 				AD1B274A20EE913000E5760D /* AppDelegate.swift in Sources */,
 				ADAEEC32210C53D500973B62 /* RestaurantViewModel.swift in Sources */,
 				AD1B277820EE95C800E5760D /* FirstViewModel.swift in Sources */,
+				ADAEEC37210C589000973B62 /* Extensions.swift in Sources */,
 				AD4CAF82210A4F79006550D4 /* Restaurant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
