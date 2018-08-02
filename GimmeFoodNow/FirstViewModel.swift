@@ -50,7 +50,7 @@ class FirstViewModel: NSObject, CLLocationManagerDelegate {
             let serializationHelper = JSONSerializationHelper()
             if let restaurants = serializationHelper.parseYelpRestaurants(json: jsonData) {
                 if let randomRestaurant = self?.pickRandomRestaurant(restaurants: restaurants) {
-                    self?.delegate?.showRestaurantViewController(viewModel: RestaurantViewModel(restaurant: randomRestaurant))
+                    self?.delegate?.showRestaurantViewController(viewModel: RestaurantViewModel(restaurant: randomRestaurant, showFavoritesButton: true))
                 }
             }
         }

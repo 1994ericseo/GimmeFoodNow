@@ -67,9 +67,10 @@ class FirstViewController: UIViewController {
     }
     
     func setupView() {
-        title = "FOOOOOOD"
+        title = "Find me food"
         view.addSubview(findMeFoodButton)
         view.backgroundColor = .white
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .bookmarks, target: self, action: #selector(bookmarksTapped))
     }
     
     func setupConstraints() {
@@ -83,6 +84,13 @@ class FirstViewController: UIViewController {
     func findMeFoodButtonAction() {
         if let viewModel = self.viewModel {
             viewModel.findMeFoodAction()
+        }
+    }
+    
+    func bookmarksTapped() {
+        let bookmarksTableViewController = FavoritesTableViewController(viewModel: FavoritesTableViewModel())
+        DispatchQueue.main.async { [weak self] in
+            self?.navigationController?.pushViewController(bookmarksTableViewController, animated: true)
         }
     }
     
