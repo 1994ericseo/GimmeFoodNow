@@ -8,6 +8,7 @@
 
 import Foundation
 import CoreLocation
+import UIKit
 
 class FirstViewModel: NSObject, CLLocationManagerDelegate {
     weak var delegate: FirstViewControllerDelegate?
@@ -43,14 +44,17 @@ class FirstViewModel: NSObject, CLLocationManagerDelegate {
         let long = Double(currentLatLongCoordinate.longitude)
         YelpSearchRequests().searchWithLatLong(lat: lat, long: long) { [weak self] (data, error) in
             self?.delegate?.updateLoadingState(isLoading: false)
-            
             guard let jsonData = data as? [String: Any] else {
                 return
             }
             let serializationHelper = JSONSerializationHelper()
             if let restaurants = serializationHelper.parseYelpRestaurants(json: jsonData) {
                 if let randomRestaurant = self?.pickRandomRestaurant(restaurants: restaurants) {
-                    self?.delegate?.showRestaurantViewController(viewModel: RestaurantViewModel(restaurant: randomRestaurant))
+                    DispatchQueue.main.async {
+                        self?.delegate?.showRestaurantViewController(viewModel: RestaurantViewModel(restaurant: randomRestaurant,
+                                                                                                showFavoriteButton: true,
+                                                                                                appDelegate: UIApplication.shared.delegate as! AppDelegate))
+                    }
                 }
             }
         }

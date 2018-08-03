@@ -31,6 +31,10 @@
 		ADAEEC34210C54DC00973B62 /* RestaurantViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAEEC33210C54DC00973B62 /* RestaurantViewModelTests.swift */; };
 		ADAEEC35210C554800973B62 /* RestaurantViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAEEC31210C53D500973B62 /* RestaurantViewModel.swift */; };
 		ADAEEC37210C589000973B62 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAEEC36210C589000973B62 /* Extensions.swift */; };
+		ADD6AB892113BC650044505B /* FavoritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD6AB882113BC650044505B /* FavoritesTableViewController.swift */; };
+		ADD6AB8C2113BFA10044505B /* GimmeFoodNow.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ADD6AB8A2113BFA10044505B /* GimmeFoodNow.xcdatamodeld */; };
+		ADD6ABCB2113C28F0044505B /* FavoritesTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD6ABCA2113C28F0044505B /* FavoritesTableViewModel.swift */; };
+		ADD6ABCC2113D04F0044505B /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAEEC2F210C539000973B62 /* RestaurantViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +82,9 @@
 		ADAEEC31210C53D500973B62 /* RestaurantViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewModel.swift; sourceTree = "<group>"; };
 		ADAEEC33210C54DC00973B62 /* RestaurantViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewModelTests.swift; sourceTree = "<group>"; };
 		ADAEEC36210C589000973B62 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		ADD6AB882113BC650044505B /* FavoritesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewController.swift; sourceTree = "<group>"; };
+		ADD6AB8B2113BFA10044505B /* RestaurantModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RestaurantModel.xcdatamodel; sourceTree = "<group>"; };
+		ADD6ABCA2113C28F0044505B /* FavoritesTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,15 +138,18 @@
 			isa = PBXGroup;
 			children = (
 				AD1B275520EE913000E5760D /* Info.plist */,
+				ADD6AB8A2113BFA10044505B /* GimmeFoodNow.xcdatamodeld */,
 				AD1B275220EE913000E5760D /* LaunchScreen.storyboard */,
 				AD1B275020EE913000E5760D /* Assets.xcassets */,
 				AD1B274920EE913000E5760D /* AppDelegate.swift */,
 				AD1B274B20EE913000E5760D /* FirstViewController.swift */,
+				AD1B277720EE95C800E5760D /* FirstViewModel.swift */,
 				ADAEEC2F210C539000973B62 /* RestaurantViewController.swift */,
 				ADAEEC31210C53D500973B62 /* RestaurantViewModel.swift */,
 				ADAEEC33210C54DC00973B62 /* RestaurantViewModelTests.swift */,
-				AD1B277720EE95C800E5760D /* FirstViewModel.swift */,
 				AD69826720F184DE00660677 /* MainNavigationViewController.swift */,
+				ADD6AB882113BC650044505B /* FavoritesTableViewController.swift */,
+				ADD6ABCA2113C28F0044505B /* FavoritesTableViewModel.swift */,
 				ADAEEC28210C460100973B62 /* JSON */,
 				ADAEEC2E210C516200973B62 /* Model */,
 				AD69826C20F1C77F00660677 /* Network */,
@@ -339,10 +349,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADAEEC25210C44DB00973B62 /* JSONSerializationHelper.swift in Sources */,
+				ADD6ABCB2113C28F0044505B /* FavoritesTableViewModel.swift in Sources */,
 				AD69826E20F1C79700660677 /* YelpNetworkLayer.swift in Sources */,
 				AD1B274C20EE913000E5760D /* FirstViewController.swift in Sources */,
 				AD69826820F184DE00660677 /* MainNavigationViewController.swift in Sources */,
 				ADAEEC30210C539000973B62 /* RestaurantViewController.swift in Sources */,
+				ADD6AB892113BC650044505B /* FavoritesTableViewController.swift in Sources */,
+				ADD6AB8C2113BFA10044505B /* GimmeFoodNow.xcdatamodeld in Sources */,
 				ADA34B8120F1DFED000FF5D2 /* YelpSearchRequests.swift in Sources */,
 				AD1B274A20EE913000E5760D /* AppDelegate.swift in Sources */,
 				ADAEEC32210C53D500973B62 /* RestaurantViewModel.swift in Sources */,
@@ -357,6 +370,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADAEEC2D210C4F6100973B62 /* Restaurant.swift in Sources */,
+				ADD6ABCC2113D04F0044505B /* RestaurantViewController.swift in Sources */,
 				ADAEEC2C210C4C3A00973B62 /* JSONSerializationHelper.swift in Sources */,
 				AD1B275F20EE913000E5760D /* GimmeFoodNowTests.swift in Sources */,
 				AD4CAF86210A531B006550D4 /* RestaurantTests.swift in Sources */,
@@ -614,6 +628,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		ADD6AB8A2113BFA10044505B /* GimmeFoodNow.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				ADD6AB8B2113BFA10044505B /* RestaurantModel.xcdatamodel */,
+			);
+			currentVersion = ADD6AB8B2113BFA10044505B /* RestaurantModel.xcdatamodel */;
+			path = GimmeFoodNow.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = AD1B273E20EE913000E5760D /* Project object */;
 }
