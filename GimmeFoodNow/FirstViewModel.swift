@@ -1,11 +1,3 @@
-//
-//  MainViewModel.swift
-//  GimmeFoodNow
-//
-//  Created by Eric Seo on 7/5/18.
-//  Copyright © 2018 Eric Seo. All rights reserved.
-//
-
 import Foundation
 import CoreLocation
 import UIKit

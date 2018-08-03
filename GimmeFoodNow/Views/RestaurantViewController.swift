@@ -1,11 +1,3 @@
-//
-//  RestaurantViewController.swift
-//  GimmeFoodNow
-//
-//  Created by Eric Seo on 7/28/18.
-//  Copyright © 2018 Eric Seo. All rights reserved.
-//
-
 import UIKit
 
 protocol RestaurantViewControllerDelegate: class {

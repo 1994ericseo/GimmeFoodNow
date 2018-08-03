@@ -1,14 +1,6 @@
-//
-//  YelpNetworkLayer.swift
-//  GimmeFoodNow
-//
-//  Created by Eric Seo on 7/7/18.
-//  Copyright © 2018 Eric Seo. All rights reserved.
-//
-
 import Foundation
 
-struct YelpAPIStuff {
+enum YelpAPIStuff {
     static let host = "api.yelp.com"
     static let errorDomain = "com.yelp.YelpAPI.ErrorDomain"
 }

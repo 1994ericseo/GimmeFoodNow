@@ -1,10 +1,3 @@
-//
-//  YelpSearchRequests.swift
-//  GimmeFoodNow
-//
-//  Created by Eric Seo on 7/7/18.
-//  Copyright © 2018 Eric Seo. All rights reserved.
-//
 import Foundation
 
 class YelpSearchRequests {
