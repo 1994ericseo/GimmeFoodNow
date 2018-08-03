@@ -10,7 +10,7 @@ class RestaurantViewModelTests: XCTestCase {
             return
         }
         if let restaurants = helper.parseYelpRestaurants(json: json) {
-            let viewModel = RestaurantViewModel(restaurant: restaurants[0])
+            let viewModel = RestaurantViewModel(restaurant: restaurants[0], showFavoriteButton: true)
             XCTAssertEqual(viewModel.name, "Four Barrel Coffee")
             XCTAssertEqual(viewModel.phoneNumber, "+14152520800")
             XCTAssertEqual(viewModel.priceLevel, "$")

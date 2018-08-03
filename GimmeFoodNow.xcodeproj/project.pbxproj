@@ -34,6 +34,7 @@
 		ADD6AB892113BC650044505B /* FavoritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD6AB882113BC650044505B /* FavoritesTableViewController.swift */; };
 		ADD6AB8C2113BFA10044505B /* GimmeFoodNow.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ADD6AB8A2113BFA10044505B /* GimmeFoodNow.xcdatamodeld */; };
 		ADD6ABCB2113C28F0044505B /* FavoritesTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD6ABCA2113C28F0044505B /* FavoritesTableViewModel.swift */; };
+		ADD6ABCC2113D04F0044505B /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAEEC2F210C539000973B62 /* RestaurantViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -369,6 +370,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADAEEC2D210C4F6100973B62 /* Restaurant.swift in Sources */,
+				ADD6ABCC2113D04F0044505B /* RestaurantViewController.swift in Sources */,
 				ADAEEC2C210C4C3A00973B62 /* JSONSerializationHelper.swift in Sources */,
 				AD1B275F20EE913000E5760D /* GimmeFoodNowTests.swift in Sources */,
 				AD4CAF86210A531B006550D4 /* RestaurantTests.swift in Sources */,

@@ -31,13 +31,16 @@ class RestaurantViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
         title = viewModel.name
-        if viewModel.showFavoritesButton {
-            navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addToFavoritesAction))
-        }
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addToFavoritesAction))
+        showFavoriteButton(enabled: viewModel.showFavoriteButton)
     }
     
     func addToFavoritesAction() {
         self.viewModel.addToFavorites()
+    }
+    
+    func showFavoriteButton(enabled: Bool) {
+        navigationItem.rightBarButtonItem?.isEnabled = enabled
     }
 }
 
@@ -45,7 +48,8 @@ extension RestaurantViewController: RestaurantViewControllerDelegate {
     func addedToFavorites() {
         let alert = UIAlertController(title: "Added to favorites", message: "", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
-        self.present(alert, animated: true)
+        present(alert, animated: true)
+        showFavoriteButton(enabled: viewModel.showFavoriteButton)
     }
     
     func unableToFavorite() {

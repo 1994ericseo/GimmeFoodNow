@@ -1,11 +1,3 @@
-//
-//  BookmarksTableViewController.swift
-//  GimmeFoodNow
-//
-//  Created by Eric Seo on 8/2/18.
-//  Copyright © 2018 Eric Seo. All rights reserved.
-//
-
 import UIKit
 
 class FavoritesTableViewController: UITableViewController {
@@ -44,7 +36,9 @@ class FavoritesTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let restaurantViewModel = RestaurantViewModel(restaurant: viewModel.data[indexPath.row], showFavoritesButton: false)
+        let restaurantViewModel = RestaurantViewModel(restaurant: viewModel.data[indexPath.row],
+                                                      showFavoriteButton: false,
+                                                      appDelegate: UIApplication.shared.delegate as! AppDelegate)
         let restaurantViewController = RestaurantViewController(viewModel: restaurantViewModel)
         navigationController?.pushViewController(restaurantViewController, animated: true)
     }

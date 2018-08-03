@@ -126,9 +126,7 @@ extension FirstViewController: FirstViewControllerDelegate {
     
     func showRestaurantViewController(viewModel: RestaurantViewModel) {
         let viewController = RestaurantViewController(viewModel: viewModel)
-        DispatchQueue.main.async { [weak self] in
-            self?.navigationController?.pushViewController(viewController, animated: true)
-        }
+        navigationController?.pushViewController(viewController, animated: true)
     }
 }
 

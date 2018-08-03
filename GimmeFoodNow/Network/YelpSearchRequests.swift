@@ -15,7 +15,6 @@ class YelpSearchRequests {
     func searchWithLatLong(lat: Double, long: Double, completion: @escaping (Any, Error?) -> Void) {
         let request = yelpNetworkLayer.createRequest(path: searchRequest, params: ["latitude": String(describing: lat), "longitude": String(describing: long)])
         yelpNetworkLayer.query(request: request) { (data, error) in
-            print(data)
             completion(data, error)
         }
     }
